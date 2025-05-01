@@ -14,4 +14,4 @@ My responsibilities included:
 
 ## 📌 Poster Preview
 
-![Poster Preview](./FYP_Poster.png)
+<img src="./FYP_Poster.png" alt="Poster Preview" width="500"/>
