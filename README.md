@@ -15,3 +15,9 @@ My responsibilities included:
 ## 📌 Poster Preview
 
 <img src="./FYP_Poster.png" alt="Poster Preview" width="500"/>
+
+## 🤖 Robot – SHARE-C
+
+<img src="./sharec_robot.PNG" alt="SHARE-C Robot" width="300"/>
+
+---
