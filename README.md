@@ -12,4 +12,4 @@ My responsibilities included:
 
  Note: This repository showcases only the components I personally developed. Other parts of the project (e.g., SLAM implementation, GUI, or mechanical design) were handled by my teammates.
 
-[Uploading FYP Final Poster.pdf…](FYP Poster)
+"C:\Users\Jade\Downloads\FYP Final Poster.pdf"
