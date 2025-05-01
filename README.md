@@ -12,6 +12,3 @@ My responsibilities included:
 
  Note: This repository showcases only the components I personally developed. Other parts of the project (e.g., SLAM implementation, GUI, or mechanical design) were handled by my teammates.
 
-## 📄 Project Poster
-
-[Download Final Poster (PDF)](./FYP%20Final%20Poster.pdf)
