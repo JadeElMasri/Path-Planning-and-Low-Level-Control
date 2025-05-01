@@ -11,3 +11,5 @@ My responsibilities included:
 - Creating a custom **battery monitoring node** to estimate and publish battery percentage from raw sensor voltage data.
 
  Note: This repository showcases only the components I personally developed. Other parts of the project (e.g., SLAM implementation, GUI, or mechanical design) were handled by my teammates.
+
+[Uploading FYP Final Poster.pdf…](FYP Poster)
