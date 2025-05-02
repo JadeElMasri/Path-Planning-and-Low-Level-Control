@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="map_server" type="map_server" name="map_server" output="screen"
+        args="$(find autonomous_navigation)/maps/map.yaml"/>
+</launch>

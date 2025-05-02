@@ -1,0 +1,13 @@
+<launch>
+    <!-- Fake map to odometry transform -->
+    <node pkg="tf" type="static_transform_publisher" name="fake_map_tf"
+        args="0 0 0 0 0 0 map odom 10"/>
+
+    <!-- Fake odometry transform -->
+    <node pkg="tf" type="static_transform_publisher" name="fake_odom_tf"
+        args="0 0 0 0 0 0 odom base_footprint 10"/>
+
+    <!-- Fake base_footprint to base_link transform -->
+    <node pkg="tf" type="static_transform_publisher" name="fake_base_tf"
+        args="0 0 0 0 0 0 base_footprint base_link 10"/>
+</launch>
