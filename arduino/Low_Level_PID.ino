@@ -1,42 +1,35 @@
 #include <Arduino.h>
 
-// Define IBT-2 motor driver pins (Right Motor - ACTUAL RIGHT)
-#define R_IS  8      // Right Motor Enable
+#define R_IS  8     
 #define REN   9
-#define PWM_R 10     // Right Motor PWM
+#define PWM_R 10     
 #define LEN   12
 #define L_IS  13
 
-// Define IBT-2 motor driver pins (Left Motor - ACTUAL LEFT)
-#define L_IS_two  0  // Left Motor Enable
+#define L_IS_two  0 
 #define REN_two   1
-#define PWM_L  2     // Left Motor PWM
+#define PWM_L  2     
 #define LEN_two  4
 #define L_IS_two_2  5
 
-// ✅ Define missing Right Motor second set of pins (needed for bidirectional control)
-#define R_IS_two  6  // Right Motor second control pin
-#define PWM_R_two 7  // Right Motor second PWM
+#define R_IS_two  6  
+#define PWM_R_two 7  
 
-// ✅ Define missing Left Motor second set of pins
-#define PWM_L_two 3  // Left Motor second PWM
+#define PWM_L_two 3  
 
-// Encoder pins
-#define ENCODER_A 20  // Encoder for the left wheel (ACTUAL LEFT)
-#define ENCODER_B 21  // Encoder for the right wheel (ACTUAL RIGHT)
+#define ENCODER_A 20  
+#define ENCODER_B 21  
 
-// Encoder counts
-volatile unsigned long pulseCount1 = 0;  // Left motor encoder count
-volatile unsigned long pulseCount2 = 0;  // Right motor encoder count
+volatile unsigned long pulseCount1 = 0; 
+volatile unsigned long pulseCount2 = 0;  
 
 unsigned long previousMillis = 0;
 unsigned long startTime = 0;
 bool timerStarted = false;
-const long interval = 100; // 100ms interval for logging
+const long interval = 100; 
 bool stepApplied = false;
-int step_speed = 90;  // Step input speed
+int step_speed = 90;  
 
-// PID Parameters for Right Motor
 float Kp_r = 0.05, Ki_r = 0.036, Kd_r = 0.04;  
 float error_r, last_error_r = 0;
 float integral_r = 0;
