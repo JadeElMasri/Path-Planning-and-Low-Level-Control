@@ -6,7 +6,9 @@ The system was developed mainly on an NVIDIA Jetson TX2 and an Arduino Mega, com
 
 My work involved:
 
- - Configuring and calibrating the **move_base** navigation stack, which is complemented by the use of "rtabmap_slam" for perception and localization.
+ - Configuring and calibrating the `move_base`
+ navigation stack, which is complemented by the use of `rtabmap_slam`
+ for perception and localization.
 
  - Creating low-level PID motor controllers on the Arduino.
 
