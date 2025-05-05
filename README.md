@@ -16,7 +16,7 @@ My work involved:
 
  - Developing a custom battery monitoring node to estimate and publish battery percentage from raw sensor voltage data.
 
-Note: Only the components I directly developed are included in this repository. My teammates worked on the other aspects of the project (e.g., SLAM implementation, GUI, or mechanical design)."**
+**Note**: Only the components I directly developed are included in this repository. My teammates worked on the other aspects of the project (e.g., SLAM implementation, GUI, or mechanical design).
 
 ## 📌 Poster Preview
 
