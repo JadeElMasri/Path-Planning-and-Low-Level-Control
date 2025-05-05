@@ -1,16 +1,20 @@
-# Path-Planning-and-Low-Level-Control
+Path-Planning-and-Low-Level-Control
 
-This repository contains my individual contributions to our Final Year Project (FYP), titled **"Developing Robot SHARE-C's Full Autonomy"**, specifically focusing on **path planning** and **low-level control**.
+This repository holds my personal contributions to our Final Year Project (FYP), which is Developing Robot SHARE-C's Full Autonomy, with an emphasis on path planning and low-level control.
 
-The system was primarily developed on a **NVIDIA Jetson TX2** and an **Arduino Mega**, communicating via **rosserial** under **ROS Melodic**.
+The system was developed mainly on an NVIDIA Jetson TX2 and an Arduino Mega, communicating using rosserial on ROS Melodic.
 
-My responsibilities included:
-- Setting up and tuning the `move_base` navigation stack, used in conjunction with `rtabmap` SLAM for perception and localization.
-- Developing low-level **PID motor controllers** on the Arduino.
-- Integrating **teleoperation via keyboard** for manual control.
-- Creating a custom **battery monitoring node** to estimate and publish battery percentage from raw sensor voltage data.
+My work involved:
 
- Note: This repository showcases only the components I personally developed. Other parts of the project (e.g., SLAM implementation, GUI, or mechanical design) were handled by my teammates.
+ - Configuring and calibrating the move_base navigation stack, which is complemented by the use of RTABMAP-SLAM for perception and localization.
+
+ - Creating low-level PID motor controllers on the Arduino.
+
+ - Incorporating keyboard teleoperation for manual control.
+
+ - Developing a custom battery monitoring node to estimate and publish battery percentage from raw sensor voltage data.
+
+Note: Only the components I directly developed are included in this repository. My teammates worked on the other aspects of the project (e.g., SLAM implementation, GUI, or mechanical design)."**
 
 ## 📌 Poster Preview
 
