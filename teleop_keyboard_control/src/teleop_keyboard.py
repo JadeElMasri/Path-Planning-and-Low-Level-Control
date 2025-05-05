@@ -6,7 +6,6 @@ import sys
 import tty
 import termios
 
-# Function to read user input from keyboard
 def get_key():
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
