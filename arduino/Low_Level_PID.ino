@@ -44,7 +44,6 @@ float integral_l = 0;
 float derivative_l;
 int pwm_l = 0;  
 
-// Interrupt functions for encoders
 void countPulse1() { pulseCount1++; }  // Left Wheel
 void countPulse2() { pulseCount2++; }  // Right Wheel
 
@@ -59,7 +58,6 @@ void motorControl(char command) {
                 pwm_r = step_speed;
                 pwm_l = step_speed;
 
-                // ✅ Apply EXACT motor control settings from Teleop Code
                 digitalWrite(R_IS, HIGH);
                 digitalWrite(L_IS, LOW);
                 digitalWrite(R_IS_two, LOW);
@@ -104,14 +102,10 @@ void setup() {
     pinMode(REN_two, OUTPUT);
     pinMode(LEN_two, OUTPUT);
 
-    // ✅ Add missing right motor second set of pins
     pinMode(PWM_R_two, OUTPUT);
     pinMode(R_IS_two, OUTPUT);
 
-    // ✅ Add missing left motor second PWM pin
     pinMode(PWM_L_two, OUTPUT);
-
-    // Set encoder pins as inputs
     pinMode(ENCODER_A, INPUT_PULLUP);
     pinMode(ENCODER_B, INPUT_PULLUP);
 
@@ -138,11 +132,9 @@ void loop() {
         if (currentMillis - previousMillis >= interval) {
             previousMillis = currentMillis;
 
-            // Copy encoder counts safely
             unsigned long pulseCopy1 = pulseCount1;  // Left motor encoder count
             unsigned long pulseCopy2 = pulseCount2;  // Right motor encoder count
 
-            // Calculate RPM for Left and Right Motors
             float rpm1 = (pulseCopy1 * 60) / interval;  // Left RPM
             float rpm2 = (pulseCopy2 * 60) / interval;  // Right RPM
 
@@ -164,17 +156,14 @@ void loop() {
             pwm_r += correction_r;
             pwm_l += correction_l;
 
-            // Constrain PWM values
             pwm_r = constrain(pwm_r, 0, 255);
             pwm_l = constrain(pwm_l, 0, 255);
 
-            // Apply PWM outputs to both motors
             analogWrite(PWM_R, pwm_r);
             analogWrite(PWM_L, 0);
             analogWrite(PWM_R_two, 0);
             analogWrite(PWM_L_two, pwm_l);
 
-            // Print Time, RPM Left, RPM Right
             Serial.print((currentMillis - startTime) / 1000.0);  
             Serial.print(",");
             Serial.print(rpm1);  // Left wheel RPM
