@@ -1,7 +1,6 @@
 #include <ros.h>
 #include <std_msgs/String.h>
 #include <string.h>
-// Define IBT-2 motor driver pins
 #define R_IS  0
 #define REN   1
 #define PWM_R 2
@@ -20,28 +19,27 @@ int speed_value = 100;
 
 ros::NodeHandle nh;
 
-// Motor control logic
 void motorControl(char command) {
     switch (command) {
-        case 'w':  // Forward
+        case 'w':  
             digitalWrite(R_IS, HIGH); digitalWrite(L_IS, LOW);
             digitalWrite(R_IS_two, LOW); digitalWrite(L_IS_two, HIGH);
             analogWrite(PWM_R, speed_value); analogWrite(PWM_L, 0);
             analogWrite(PWM_R_two, 0); analogWrite(PWM_L_two, speed_value);
             break;
-        case 's':  // Backward
+        case 's':  
             digitalWrite(R_IS, LOW); digitalWrite(L_IS, HIGH);
             digitalWrite(R_IS_two, HIGH); digitalWrite(L_IS_two, LOW);
             analogWrite(PWM_R, 0); analogWrite(PWM_L, speed_value);
             analogWrite(PWM_R_two, speed_value); analogWrite(PWM_L_two, 0);
             break;
-        case 'a':  // Left
+        case 'a':  
             digitalWrite(R_IS, LOW); digitalWrite(L_IS, HIGH);
             digitalWrite(R_IS_two, LOW); digitalWrite(L_IS_two, HIGH);
             analogWrite(PWM_R, speed_value / 2); analogWrite(PWM_L, 0);
             analogWrite(PWM_R_two, speed_value); analogWrite(PWM_L_two, 0);
             break;
-        case 'd':  // Right
+        case 'd':  
             digitalWrite(R_IS, HIGH); digitalWrite(L_IS, LOW);
             digitalWrite(R_IS_two, HIGH); digitalWrite(L_IS_two, LOW);
             analogWrite(PWM_R, 0); analogWrite(PWM_L, speed_value);
@@ -56,15 +54,13 @@ void motorControl(char command) {
     }
 }
 
-// ROS subscriber callback
 void commandCallback(const std_msgs::String& msg) {
     if (strlen(msg.data) > 0) {
-        char command = msg.data[0];  // Use only first character
+        char command = msg.data[0];  
         motorControl(command);
     }
 }
 
-// Subscribe to the correct topic
 ros::Subscriber<std_msgs::String> sub("/teleop", &commandCallback);
 
 void setup() {
