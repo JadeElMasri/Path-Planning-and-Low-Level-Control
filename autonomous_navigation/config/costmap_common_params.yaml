@@ -10,7 +10,7 @@ transform_tolerance: 0.5
 observation_sources: scan
 
 scan:
-  sensor_frame: camera_imu_optical_frame
+  sensor_frame: camera_depth_optical_frame
   data_type: scan
   topic: /scan
   marking: true
