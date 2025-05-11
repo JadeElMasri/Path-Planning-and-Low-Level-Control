@@ -1,5 +1,0 @@
-<launch>
-  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" output="screen">
-    <rosparam command="load" file="$(find autonomous_navigation)/config/ekf.yaml"/>
-  </node>
-</launch>
