@@ -1,4 +1,3 @@
-<img width="1179" alt="image" src="https://github.com/user-attachments/assets/a8d29fd8-86da-4027-b151-d23416ce0650" />Path-Planning-and-Low-Level-Control
 
 This repository holds my personal contributions to our Final Year Project (FYP), which is Developing Robot SHARE-C's Full Autonomy, with an emphasis on path planning and low-level control.
 
