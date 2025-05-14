@@ -6,7 +6,7 @@ My work involved:
 
 - Integrated **RTAB-MAP** for perception, including mapping and localization both experimentally and in simulation (Gazebo)
 
-- Set up, developed and configured **move_base** path planning.
+- Set up, developed and configured **move_base** for path planning.
 
 - Developed low-level **PID controllers** on the Arduino.
 
