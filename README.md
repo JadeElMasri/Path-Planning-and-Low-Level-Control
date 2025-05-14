@@ -14,7 +14,7 @@ My work involved:
 
 - Created a custom **battery monitoring** node to estimate and publish battery percentage from voltage sensor readings.
 
-Note: This repository includes only the components I developed. Other aspects of the project (e.g., Self-disinfection system, GUI, mechanical design) were handled by my teammates.
+Note: This repository includes only the components I developed. Other aspects of the project (e.g., Self-disinfection system, GUI, Mechanical Design) were handled by my teammates.
 
 ## 📌 Poster Preview
 
