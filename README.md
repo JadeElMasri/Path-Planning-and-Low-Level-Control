@@ -26,4 +26,4 @@ Note: This repository includes only the components I developed. Other aspects of
 
 ## 📹 Video Demonstration
 
- [Click here to watch the project demonstration on YouTube](https://youtu.be/2a8PZjOhHwQ)
+This [video](https://youtu.be/2a8PZjOhHwQ) presents the project motivation and a comprehensive demonstration of SHARE-C’s main functionalities.
