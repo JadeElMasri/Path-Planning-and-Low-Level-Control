@@ -1,21 +1,20 @@
-
-This repository holds my personal contributions to our Final Year Project (FYP), which is Developing Robot SHARE-C's Full Autonomy, with an emphasis on path planning and low-level control.
+This repository contains my personal contributions to our Final Year Project (FYP), titled "Developing Robot SHARE-C's Full Autonomy."
 
 The system was developed mainly on an NVIDIA Jetson TX2 and an Arduino Mega, communicating using rosserial on ROS Melodic.
 
 My work involved:
 
- - Configuring and calibrating the `move_base`
- navigation stack, which is complemented by the use of RTAB-MAP SLAM
- for perception and localization.
+- Integrated RTAB-MAP for perception, including mapping and localization (Both exerimental and on Gazebo)
 
- - Creating low-level PID motor controllers on the Arduino.
+- Configured and calibrated the move_base navigation stack for autonomous path planning.
 
- - Incorporating keyboard teleoperation for manual control.
+- Developed low-level PID motor controllers on the Arduino.
 
- - Developing a custom battery monitoring node to estimate and publish battery percentage from raw sensor voltage data.
+- Implemented keyboard teleoperation for manual robot control.
 
-**Note**: Only the components I directly developed are included in this repository. My teammates worked on the other aspects of the project (e.g., SLAM implementation, GUI, or mechanical design).
+- Created a custom battery monitoring node to estimate and publish battery percentage from raw voltage readings.
+
+Note: This repository includes only the components I developed. Other aspects of the project (e.g., SLAM tuning, GUI, mechanical design) were handled by my teammates.
 
 ## 📌 Poster Preview
 
