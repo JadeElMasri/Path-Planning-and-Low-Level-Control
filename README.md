@@ -1,10 +1,10 @@
 This repository contains my personal contributions to our Final Year Project (FYP), titled "Developing Robot SHARE-C's Full Autonomy."
 
-The system was developed mainly on an NVIDIA Jetson TX2 and an Arduino Mega, communicating using rosserial on ROS Melodic.
+The system was primarily developed on an NVIDIA Jetson TX2 and an Arduino Mega, communicating using rosserial on ROS Melodic.
 
 My work involved:
 
-- Integrated RTAB-MAP for perception, including mapping and localization (Both exerimental and on Gazebo)
+- Integrated RTAB-MAP for perception, including mapping and localization both experimentally and simulation (Gazebo)
 
 - Configured and calibrated the move_base navigation stack for autonomous path planning.
 
