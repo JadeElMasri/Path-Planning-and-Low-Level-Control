@@ -4,15 +4,15 @@ The system was primarily developed on an NVIDIA Jetson TX2 and an Arduino Mega, 
 
 My work involved:
 
-- Integrated RTAB-MAP for perception, including mapping and localization both experimentally and simulation (Gazebo)
+- Integrated **RTAB-MAP** for perception, including mapping and localization both experimentally and in simulation (Gazebo)
 
-- Configured and calibrated the move_base navigation stack for autonomous path planning.
+- Set up, developed and configured **move_base** path planning.
 
-- Developed low-level PID motor controllers on the Arduino.
+- Developed low-level **PID controllers** on the Arduino.
 
-- Implemented keyboard teleoperation for manual robot control.
+- Implemented **keyboard teleoperation** for manual robot control.
 
-- Created a custom battery monitoring node to estimate and publish battery percentage from raw voltage readings.
+- Created a custom **battery monitoring** node to estimate and publish battery percentage from voltage sensor's readings.
 
 Note: This repository includes only the components I developed. Other aspects of the project (e.g., SLAM tuning, GUI, mechanical design) were handled by my teammates.
 
@@ -26,4 +26,4 @@ Note: This repository includes only the components I developed. Other aspects of
 
 ## 📹 Video Demonstration
 
-The following link : https://youtu.be/2a8PZjOhHwQ Video showcasing the motivation and demonstration of this project 
+ [Click here to watch the project demonstration on YouTube](https://youtu.be/2a8PZjOhHwQ)
