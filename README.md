@@ -12,7 +12,7 @@ My work involved:
 
 - Implemented **keyboard teleoperation** for manual robot control.
 
-- Created a custom **battery monitoring** node to estimate and publish battery percentage from voltage sensor's readings.
+- Created a custom **battery monitoring** node to estimate and publish battery percentage from voltage sensor readings.
 
 Note: This repository includes only the components I developed. Other aspects of the project (e.g., SLAM tuning, GUI, mechanical design) were handled by my teammates.
 
